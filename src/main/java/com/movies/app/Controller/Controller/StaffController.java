@@ -31,25 +31,25 @@ public class StaffController {
     }
 
     //gets a staff by its id
-    @GetMapping(value = "/staff/{id}", consumes = "application/JSON", produces = "application/JSON")
+    @GetMapping(value = "/staffId/{id}", consumes = "application/JSON", produces = "application/JSON")
     public Staff handleGetStaffById(@PathVariable int id){
         return staffService.getStaffById(id);
     }
 
     //gets staff by username
-    @GetMapping(value = "staff/{userName}")
+    @GetMapping(value = "staffUsername/{userName}")
     public Staff handleGetStaffByUsername(@PathVariable String username){
         return staffService.getStaffByUsername(username);
     }
 
     //get staff by first name
-    @GetMapping(value = "/staff/{firstName}", produces = "application/json")
+    @GetMapping(value = "/staffFirstName/{firstName}", produces = "application/json")
     public Staff handleGetStaffByFirstName(@PathVariable String firstName){
         return staffService.getStaffByFirstName(firstName);
     }
 
     //get staff by last name
-    @GetMapping(value = "/staff/{lastName}", produces = "application/json")
+    @GetMapping(value = "/staffLastName/{lastName}", produces = "application/json")
     public Staff handleGetStaffByLastName(@PathVariable String lastname){
         return staffService.getStaffByLastName(lastname);
     }

@@ -33,7 +33,7 @@ public class PaymentController {
     }
 
     //gets a payment by its id
-    @GetMapping(value = "/payment/{id}", consumes = "application/JSON", produces = "application/JSON")
+    @GetMapping(value = "/paymentId/{id}", consumes = "application/JSON", produces = "application/JSON")
     public Payment handleGetPaymentById(@PathVariable int id){
         return paymentService.getPaymentById(id);
     }

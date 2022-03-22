@@ -31,19 +31,19 @@ public class CustomerController {
     }
 
     //gets a customer by its id
-    @GetMapping("/customer/{id}")
+    @GetMapping("/customerId/{id}")
     public Customer handleGetCustomerById(@PathVariable int id){
         return customerService.getCustomerById(id);
     }
 
     //get customer by first name
-    @GetMapping("/customer/{firstName}")
+    @GetMapping("/customerFirstName/{firstName}")
     public Customer handleGetCustomerByFirstName(@PathVariable String firstName){
         return customerService.getCustomerByFirstName(firstName);
     }
 
     //get customer by last name
-    @GetMapping("/customer/{lastName}")
+    @GetMapping("/customerLastName/{lastName}")
     public Customer handleGetCustomerByLastName(@PathVariable String lastname){
         return customerService.getCustomerByLastName(lastname);
     }

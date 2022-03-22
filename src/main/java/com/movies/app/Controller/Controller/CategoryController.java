@@ -31,13 +31,13 @@ public class CategoryController {
     }
 
     //gets a category by its id
-    @GetMapping("/category/{id}")
+    @GetMapping("/categoryId/{id}")
     public Category handleGetCategoryById(@PathVariable int id){
         return categoryService.getCategoryById(id);
     }
 
     //get category by name of category
-    @GetMapping("/category/{name}")
+    @GetMapping("/categoryName/{name}")
     public Category handleGetCategoryByName(@PathVariable String name){
         return categoryService.getCategoryByName(name);
     }

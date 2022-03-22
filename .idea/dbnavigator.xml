@@ -28,7 +28,15 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="114234fb-fd66-4bf8-a18c-f4fff31b21a1">
-      <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
+      <console name="movierental" type="STANDARD" schema="movierental" session="Main"><![CDATA[select * from actor;
+
+insert into actor (actor_Id, first_name, last_name, last_update) values (1, 'Dorris', 'Dedman', '2021-12-04 03:47:56');
+insert into actor (actor_Id, first_name, last_name, last_update) values (2, 'Michal', 'Sargerson', '2021-04-03 05:26:23');
+insert into actor (actor_Id, first_Name, last_Name, last_update) values (3, 'Hope', 'Vader', '2021-06-09 05:16:15');
+insert into actor (actor_Id, first_Name, last_Name, last_Update) values (4, 'Emlyn', 'Vance', '2021-04-12 12:28:25');
+insert into actor (actor_Id, first_Name, last_Name, last_Update) values (5, 'Babbie', 'Lauchlan', '2021-05-18 20:43:38');
+insert into actor (actor_Id, first_Name, last_Name, last_Update) values (6, 'Bob', 'Builder', '2021-12-16 04:02:35');
+insert into actor (actor_Id, first_Name, last_Name, last_Update) values (7, 'Trescha', 'Kuhnke', '2021-07-02 16:05:57');]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -44,6 +52,7 @@
         <condition column="film_Id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+    <filter-actions connection-id="114234fb-fd66-4bf8-a18c-f4fff31b21a1" dataset="movierental.actor" active-filter-id="" />
     <filter-actions connection-id="114234fb-fd66-4bf8-a18c-f4fff31b21a1" dataset="movierental.category" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -70,8 +79,10 @@
   <component name="DBNavigator.Project.ParserDiagnosticsManager">
     <diagnostics-history />
   </component>
-  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces />
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="false">
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -476,7 +487,9 @@
         <prompt-execution value="false" />
       </statement-execution>
       <script-execution>
-        <command-line-interfaces />
+        <command-line-interfaces>
+          <value id="2ec4cf2c-588d-4c50-8692-5b091015253a" name="MySQL client" executable-path="$USER_HOME$/Documents/eclectics/java/eclecticsMovieRental/movierentalsystem.sql" database-type="MYSQL" />
+        </command-line-interfaces>
         <execution-timeout value="300" />
       </script-execution>
       <method-execution>

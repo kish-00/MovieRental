@@ -33,7 +33,7 @@ public class InventoryController {
     }
 
     //gets an inventory by its id
-    @GetMapping("/inventory/{id}")
+    @GetMapping("/inventoryId/{id}")
     public Inventory handleGetInventoryById(@PathVariable int id){
         return inventoryService.getInventoryById(id);
     }

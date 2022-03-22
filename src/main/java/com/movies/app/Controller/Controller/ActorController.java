@@ -31,19 +31,19 @@ public class ActorController {
     }
 
     //gets an actor by its id
-    @GetMapping("/actor/{id}")
+    @GetMapping("/getActorId/{id}")
     public Actor handleGetActorById(@PathVariable int id){
         return actorService.getActorById(id);
     }
 
     //get actor by first name
-    @GetMapping("/actors/{firstName}")
+    @GetMapping("/getActorFirstName/{firstName}")
     public Actor handleGetActorByFirstName(@RequestParam(value = "firstName") String firstName){
         return actorService.getActorByFirstName(firstName);
     }
 
     //get actor by last name
-    @GetMapping("/actor/{lastName}")
+    @GetMapping("/getActorLastName/{lastName}")
     public Actor handleGetActorByLastName(@RequestParam(value = "lastName") String lastName){
         return actorService.getActorByLastName(lastName);
     }

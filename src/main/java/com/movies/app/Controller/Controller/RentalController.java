@@ -31,7 +31,7 @@ public class RentalController {
     }
 
     //gets a rental by its id
-    @GetMapping("/rental/{id}")
+    @GetMapping("/rentalId/{id}")
     public Rental handleGetRentalById(@PathVariable int id){
         return rentalService.getRentalById(id);
     }

@@ -31,13 +31,13 @@ public class CityController {
     }
 
     //gets a city by its id
-    @GetMapping("/city/{id}")
+    @GetMapping("/cityId/{id}")
     public City handleGetCityById(@PathVariable int id){
         return cityService.getCityById(id);
     }
 
     //gets city by name
-    @GetMapping("/city/{name}")
+    @GetMapping("/cityName/{name}")
     public City handleGetCityByName (@PathVariable String name){
         return cityService.getCityByName(name);
     }

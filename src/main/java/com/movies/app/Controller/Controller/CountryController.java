@@ -31,13 +31,13 @@ public class CountryController {
     }
 
     //gets a country by its id
-    @GetMapping("/country/{id}")
+    @GetMapping("/getCountryId/{id}")
     public Country handleGetCountryById(@PathVariable int id){
         return countryService.getCountryById(id);
     }
 
     //get country by name
-    @GetMapping("/country/{name}")
+    @GetMapping("/getCountryName/{name}")
     public Country handleGetCountryByName(@PathVariable String name){
         return countryService.getCountryByName(name);
     }

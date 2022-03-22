@@ -31,7 +31,7 @@ public class StoreController {
     }
 
     //gets a store by its id
-    @GetMapping("/store/{id}")
+    @GetMapping("/storeId/{id}")
     public Store handleGetStoreById(@PathVariable int id){
         return storeService.getStoreById(id);
     }
